@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <div id="player"></div>
+    <script src="videoPlayer.js"></script>
+	<div class="buttons" align="center">
+        <p>
+          YouTube video URL:
+		  <input type="text" name="videoURL" id="videoURL">
+		  <button type="button" onclick="changeVideo()">Load</button>
+        </p>
+	</div>
+    <div class="buttons" align="center">
+    	<p>
+    		<button type="button" onclick="repeatFast()">Replay last section</button>
+    		<button type="button" onclick="repeatSlow()">Replay last section at half speed</button>
+    		<button type="button" onclick="playSlowVideo()">Continue at half speed</button>
+            <button type="button" onclick="playFastVideo()">Continue at normal speed</button>
+    	</p>
+	</div>
+	<div class="buttons" align="center">
+        <p>
+          Section duration in seconds:
+		  <input type="text" name="interval" id="interval">
+		  <button type="button" onclick="changeInterval()">Save</button>
+        </p>
+	</div>
+  </body>
+</html>
